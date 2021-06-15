@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(48, 52, 104);
+    padding: 20px;
+}
+
+.form{
+    width: 350px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 30px;
+    width: 250px;
+}
+
+.form-control input{
+    border: 0;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+.form-control label{
+    position: absolute;
+    top: 15px; /* kenapa 15px, karena di .form-control input padding top nya 15px */
+    left: 0;
+}
+
+.form-control label span{
+    min-width: 5px;
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.55, -0.55, 0.265, 1.55)
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+.btn{
+    background-color: lightblue;
+    display: inline-block;
+    width: 250px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.btn:hover{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    font-family: inherit;
+    margin: 30px 0px 10px 0px;
+    font-size: 13px;
+}
+
+.text a{
+    text-decoration: none;
+    color: lightblue;
+}

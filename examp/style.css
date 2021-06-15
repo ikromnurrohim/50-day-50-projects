@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root{
+    --nav-bg : #01262e;
+    --brand-color: #c72c48;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    height: 100vh; /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+    background-color: #555;
+}
+
+nav{
+    height: 80px;
+    background-color: var(--nav-bg);
+}
+
+nav button{
+    right: 10px;
+    top: 25px;
+    position: absolute;
+    display: none;
+    /* background-color: #555; */
+    outline: none;
+    cursor: pointer;
+}
+
+nav button#open{
+    z-index: 1;
+}
+
+
+nav button i{
+    color: red;
+}
+
+nav div {
+    padding: 15px;
+}
+
+nav div a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+div .nav-hide{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 480px){
+    nav button{
+        display: inline-block;
+    }
+
+    div #nav .nav-hide{
+        display: none;
+    }
+
+
+    nav .show-nav{
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--nav-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.9s linear;
+    }
+
+
+    
+}

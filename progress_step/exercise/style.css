@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    background-color: #fff;
+    width: 350px;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.progress{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    background-color: var(--line-border-fill);
+    height: 4px;
+    left: 0;
+    z-index: -1;
+    transform: translateY(50%);
+    transition: .4s ease;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid darkgray;
+    transition: .4 ease;
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    color: #fff;
+    padding: 8px 30px;
+    border: 0;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background-color: var(--line-border-empty);
+}

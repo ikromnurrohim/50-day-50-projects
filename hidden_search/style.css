@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+}
+
+.search{
+    position: relative;
+    height: 54px;
+}
+
+.search .input{
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.4s ease;
+}
+
+.search .btn{
+    background-color: #fff;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    transition: transform 0.4s ease;
+}
+
+.input:focus, 
+.btn:focus{
+    outline: none;
+}
+
+.search.active .input{ /* .search.active tidak di spasi karna di html meraka satu deklarasi class class="search active" */
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
+
