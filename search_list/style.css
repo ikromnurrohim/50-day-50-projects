@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 40px;
+	transform: translate(-50%, -50%);
+}
+
+#search{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 190px;
+	height: 50px;
+	padding-left: 10px;
+	font-size: 16px;
+	border: 1px solid;
+	text-transform: lowercase;
+}
+
+#chev{
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	width: 30px;
+	height: 50px;
+	line-height: 52px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#results{
+	position: absolute;
+	top: 54px;
+	left: 0px;
+	width: 200px;
+	max-height: 170px;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: none;
+	border: 1px solid;
+}
+
+.item{
+	position: relative;
+	display: inline-block;
+	top: 0px;
+	left: 0px;
+	width: 190px;
+	height: 50px;
+	padding-left: 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+	border: none;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.item:hover{
+	background: #39f;
+}
+
+
+input{
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+}
+
+
+/* CSS/Style Resets ⬇ - these are not by me & copy pasted...*/
+
+/* Remove the stupid outer glow in Webkit */
+input:focus
+{
+	outline:0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea
+{
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+
+input {
+  border-radius: 0;
+	-webkit-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}

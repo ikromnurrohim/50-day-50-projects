@@ -131,3 +131,13 @@ nav ul li + li + li{ /* li yg ke 3 */
     color: #222;
     line-height: 1.5;
 }
+
+.show-cpack {
+    height: 200px;
+    width: 100px;
+    overflow: scroll;
+    z-index: 999;
+    background-color: #636363;
+    display: inline-block;
+    position: absolute;
+}

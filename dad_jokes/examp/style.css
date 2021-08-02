@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #686de0;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px 5px;
+}

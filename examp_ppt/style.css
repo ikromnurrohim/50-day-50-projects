@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* untuk membuat di tegah harus mempunyai tinggi */
+    margin: 0;
+    overflow: hidden;
+}
+
+.form {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+input {
+    margin: 20px auto;
+}
+
+.form::after { 
+    content: " - Remember this";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  }
